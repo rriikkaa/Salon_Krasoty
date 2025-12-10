@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон красоты "Rika"</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="logo-section d-flex align-items-center">
+                <div class="logo">
+                    <img src="лого.png" height="75" width="70" alt="Логотип Rika">
+                </div>
+                <div class="site-name ms-2">
+                    <img src="RIKA.png" height="55" width="150" alt="Rika">
+                </div>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="search-container mx-3">
+                    <input type="text" class="form-control" placeholder="Поиск...">
+                </div>
+                
+                <div class="menu-section d-flex align-items-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Меню
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#0">О нас</a></li>
+                                <li><a class="dropdown-item" href="#1">Услуги</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#2">Акции</a></li>
+                                <li><a class="dropdown-item" href="#3">Контактная информация</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="user-account ms-3 d-flex align-items-center">
+                        <div class="user-icon bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-2" style="width: 30px; height: 30px;">В</div>
+                        <span><a href="index1.html">Вход</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="0" class="py-5">
+        <div class="container">
+		<h1 class="text-center">О нас</h1>
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-12 mb-4 mb-lg-0">
+                    
+                   <div class="onas text-center">
+    <p>Rika — ваш личный оазис красоты и гармонии.</p>
+    <p>Мы создаем образы, которые подчеркивают вашу индивидуальность.</p>
+    <p>Наши мастера — профессионалы, которые через искусство стрижки,</p>
+    <p>виртуозное окрашивание помогают вам обрести идеальный баланс между</p>
+    <p>безупречным внешним видом и внутренней уверенностью.</p>
+    
+    <div class="d-flex justify-content-center mt-4">
+        <a href="index10.html" class="btn btn-custom">ЗАПИСАТЬСЯ</a>
+    </div>
+</div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="салон1.jpg" class="d-block w-100 rounded" alt="Салон красоты Rika">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="салон2.jpg" class="d-block w-100 rounded" alt="Салон красоты Rika">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+
+    <div id="1" class="py-5">
+        <section>
+            <h1 class="text-center mb-5">Услуги</h1>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card card-custom h-100">
+                            <img src="бикси.jpg" class="card-img-top" alt="Женские стрижки">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Женские стрижки</h5>
+                                <p class="card-text flex-grow-1">Ваш уникальный силуэт. Ваша история в каждой пряди.</p>
+                                <a href="index2.html" class="btn mt-auto" style="background-color: #F7EDEB; border-color: #F7EDEB; color: #2B2B2B;">подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card card-custom h-100">
+                            <img src="кроп.jpg" class="card-img-top" alt="Мужские стрижки">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Мужские стрижки</h5>
+                                <p class="card-text flex-grow-1">Безупречная точность. Уверенный стиль.</p>
+                                <a href="index3.html" class="btn mt-auto" style="background-color: #F7EDEB; border-color: #F7EDEB; color: #2B2B2B;">подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card card-custom h-100">
+                            <img src="балаяж.jpg" class="card-img-top" alt="Окрашивание">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Окрашивание</h5>
+                                <p class="card-text flex-grow-1">Ваш характер в цвете. Смелый акцент вашего стиля.</p>
+                                <a href="index4.html" class="btn mt-auto" style="background-color: #F7EDEB; border-color: #F7EDEB; color: #2B2B2B;">подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+
+
+    <div id="2" class="py-5">
+        <section>
+            <h1 class="text-center mb-5">Акции</h1>
+            <div class="container">
+                <table class="promotions-table">
+                    <tr>
+                        <td><img src="15.png" alt="Скидка 15%"></td>
+                        <td><h3>Первый визит</h3><p>Скидка 15% на первое посещение!</p></td>
+                        <td><img src="образ.png" alt="Образ от Rika"></td>
+                        <td><h3>Образ от Rika</h3><p>Стрижка + Окрашивание = Уход в подарок!</p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="подарок.png" alt="Подарок"></td>
+                        <td><h3>Праздник в подарок</h3><p>Скидка 500 рублей в ваш день рождения!</p></td>
+                        <td><img src="20.png" alt="Скидка 20%"></td>
+                        <td><h3>День Сияния</h3><p>Приведи подругу и получите скидку 20% на всё!</p></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+
+
+    <footer id="3" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Контактная информация</h2>
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-3">
+                    <p><b>Адрес:</b><br>ул. Победы д. 108</p>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <p><b>Время работы:</b><br>пн-вс с 8:00 до 22:00</p>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <p><b>Телефон:</b><br>89879656776</p>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <p><b>Email:</b><br>rikahair@email.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

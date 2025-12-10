@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIKA - Услуги</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: #F7EDEB;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFFFFF;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .site-name {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        
+        .card-custom {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card-custom:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .color {
+            background: #DBA4A7;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 20px;
+            height: 100%;
+            display: flex;
+        }
+        
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+        }
+        
+        .card-body {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .card-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .card-text {
+            font-size: 16px;
+            color: #555;
+            flex-grow: 1;
+            margin-bottom: 15px;
+        }
+        
+        .btn-custom {
+            background-color: #5F613A;
+            border-color: #5F613A;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: auto;
+        }
+        
+        .btn-custom:hover {
+            background-color: #4A4C2F;
+            border-color: #4A4C2F;
+            color: white;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        .services-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .service-col {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .logo-section {
+                justify-content: center;
+            }
+            
+            .site-name {
+                position: static;
+                transform: none;
+                justify-content: center;
+            }
+            
+            .service-col {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="лого.png" height="80" width="80" alt="Логотип Rika">
+                </div>
+            </div>
+            <div class="site-name">
+                <img src="RIKA.png" height="40" width="120" alt="Rika">
+            </div>
+        </nav>
+        
+        <section>
+            <h1 class="mb-5">Услуги</h1>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-12 service-col">
+                        <div class="color">
+                            <div class="card card-custom h-100">
+                                <img src="бикси.jpg" class="card-img-top" alt="Стрижка Бикси">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Бикси</h5>
+                                    <p class="card-text flex-grow-1">Идеально подчеркивает черты лица, добавляет образу современности.</p>
+                                    <a href="index10.html" class="btn btn-custom">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4 col-md-6 col-12 service-col">
+                        <div class="color">
+                            <div class="card card-custom h-100">
+                                <img src="каскад.jpg" class="card-img-top" alt="Стрижка Каскад">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Каскад</h5>
+                                    <p class="card-text flex-grow-1">Добавляет невероятный объем, динамику и оживляет волосы.</p>
+                                    <a href="index10.html" class="btn btn-custom">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4 col-md-6 col-12 service-col">
+                        <div class="color">
+                            <div class="card card-custom h-100">
+                                <img src="малет.jpg" class="card-img-top" alt="Стрижка Маллет">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Маллет</h5>
+                                    <p class="card-text flex-grow-1">Создает дерзкий, андрогинный образ с акцентом на текстуру.</p>
+                                    <a href="index10.html" class="btn btn-custom">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 service-col">
+                        <div class="color">
+                            <div class="card card-custom h-100">
+                                <img src="лисий_хвост.jpg" class="card-img-top" alt="Стрижка Лисий хвост">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Лисий хвост</h5>
+                                    <p class="card-text flex-grow-1">Дарит образу модную небрежность и бунтарский дух.</p>
+                                    <a href="index10.html" class="btn btn-custom">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4 col-md-6 col-12 service-col">
+                        <div class="color">
+                            <div class="card card-custom h-100">
+                                <img src="медуза.jpg" class="card-img-top" alt="Стрижка Медуза">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Медуза</h5>
+                                    <p class="card-text flex-grow-1">Позволяет создавать два образа. Выбор для самых смелых новаторов.</p>
+                                    <a href="index10.html" class="btn btn-custom">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4 col-md-6 col-12 service-col">
+                        <div class="color">
+                            <div class="card card-custom h-100">
+                                <img src="hime_cut.jpg" class="card-img-top" alt="Стрижка Hime cut">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Hime cut</h5>
+                                    <p class="card-text flex-grow-1">Создает чистый, выразительный и очень фотогеничный образ.</p>
+                                    <a href="index10.html" class="btn btn-custom">ЗАПИСАТЬСЯ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 RIKA. Все права защищены.</p>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

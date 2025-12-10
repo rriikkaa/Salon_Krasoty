@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIKA - Регистрация</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #5F613A;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .registration-container {
+            width: 100%;
+            max-width: 500px;
+            padding: 30px;
+            background-color: #F7EDEB;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .logo-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .site-name {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .btn-register {
+            background-color: #5F613A;
+            border-color: #5F613A;
+            width: 100%;
+            padding: 10px;
+            font-weight: 600;
+            color: #F7EDEB;
+        }
+        .btn-register:hover {
+            background-color: #4A4C2F;
+            border-color: #4A4C2F;
+            color: #F7EDEB;
+        }
+        .divider {
+            border-top: 1px solid #dee2e6;
+            margin: 25px 0;
+        }
+        
+        @media (max-width: 576px) {
+            .logo-section {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .site-name {
+                position: static;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <div class="logo-section">
+            <div class="logo">
+                <img src="лого.png" height="75" width="70" alt="Логотип Rika">
+            </div>
+            <div class="site-name">
+                <img src="RIKA.png" height="55" width="150" alt="Rika">
+            </div>
+        </div>
+       
+        <div class="header">
+            <h2 class="mt-0">Регистрация</h2>
+        </div>
+        
+        <form>
+            <div class="form-group">
+                <label for="firstName" class="form-label">Имя:</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Введите ваше имя">
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName" class="form-label">Фамилия:</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Введите вашу фамилию">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone" class="form-label">Телефон:</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Введите ваш телефон">
+            </div>
+            
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+            </div>
+            
+            <div class="divider"></div>
+            
+            <a href="index7.html" class="btn btn-primary btn-register">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+        </form>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

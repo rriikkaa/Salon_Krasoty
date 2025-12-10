@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIKA - Записи</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: #5F613A;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: #F7EDEB;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px 25px;
+            text-align: center;
+        }
+        
+        .header-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            gap: 15px;
+        }
+        
+        .logo-left {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        
+        .user-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            flex-grow: 1;
+        }
+        
+        .username {
+            font-size: 18px;
+            color: #2B2B2B;
+            font-weight: 600;
+        }
+        
+        .phone {
+            font-size: 11px;
+            color: #2B2B2B;
+            font-weight: 500;
+        }
+        
+        .logo-right {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        
+        .divider {
+            height: 2px;
+            background-color: #5F613A;
+            margin: 20px 0;
+            opacity: 0.3;
+        }
+        
+        .page-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2B2B2B;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .appointments-section {
+            background-color: #DBA4A7;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .appointment-item {
+            background-color: #F7EDEB;
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 15px;
+            text-align: left;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .appointment-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .appointment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .appointment-date {
+            font-size: 18px;
+            font-weight: 700;
+            color: #5F613A;
+        }
+        
+        .appointment-time {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2B2B2B;
+            background-color: #DBA4A7;
+            padding: 5px 10px;
+            border-radius: 8px;
+        }
+        
+        .appointment-details {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .appointment-service {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2B2B2B;
+        }
+        
+        .appointment-master {
+            font-size: 14px;
+            color: #5F613A;
+        }
+        
+        .appointment-status {
+            font-size: 14px;
+            font-weight: 600;
+            color: #5F613A;
+            margin-top: 5px;
+        }
+        
+        .no-appointments {
+            text-align: center;
+            padding: 30px 20px;
+            color: #5F613A;
+            font-size: 16px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background-color: #5F613A;
+            color: #F7EDEB;
+            padding: 12px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .back-button:hover {
+            background-color: #4a4c2e;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px 20px;
+            }
+            
+            .header-section {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .user-info {
+                order: -1;
+            }
+            
+            .username {
+                font-size: 18px;
+            }
+            
+            .phone {
+                font-size: 16px;
+            }
+            
+            .appointment-item {
+                padding: 15px;
+            }
+            
+            .appointment-date {
+                font-size: 16px;
+            }
+            
+            .appointment-time {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <div class="logo-left">
+               <img src="лого.png" height="90" width="85" alt="Логотип Rika">
+            </div>
+            
+            <div class="user-info">
+                <div class="username">Имя пользователя</div>
+                <div class="phone">+7 (999) 999-99-99</div>
+            </div>
+            
+            <div class="logo-right">
+               <img src="rika.png" height="65" width="170" alt="Rika">
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <h1 class="page-title">Ваши записи</h1>
+        
+        <div class="appointments-section">
+            <div class="appointment-item">
+                <div class="appointment-header">
+                    <div class="appointment-date">20 ноября 2025</div>
+                    <div class="appointment-time">14:30</div>
+                </div>
+                <div class="appointment-details">
+                    <div class="appointment-service">Женская стрижка</div>
+                    <div class="appointment-master">Мастер: Анна</div>
+                    <div class="appointment-status">Статус: Подтверждена</div>
+                </div>
+            </div>
+            
+            <div class="appointment-item">
+                <div class="appointment-header">
+                    <div class="appointment-date">25 ноября 2025</div>
+                    <div class="appointment-time">11:00</div>
+                </div>
+                <div class="appointment-details">
+                    <div class="appointment-service">Окрашивание волос</div>
+                    <div class="appointment-master">Мастер: Мария</div>
+                    <div class="appointment-status">Статус: Подтверждена</div>
+                </div>
+            </div>
+            
+            <div class="appointment-item">
+                <div class="appointment-header">
+                    <div class="appointment-date">30 ноября 2025</div>
+                    <div class="appointment-time">16:45</div>
+                </div>
+                <div class="appointment-details">
+                    <div class="appointment-service">Мужская стрижка</div>
+                    <div class="appointment-master">Мастер: Елена</div>
+                    <div class="appointment-status">Статус: Ожидание подтверждения</div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="index7.html" class="back-button">Назад в аккаунт</a>
+    </div>
+</body>
+</html>
